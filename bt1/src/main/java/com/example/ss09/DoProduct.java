@@ -26,6 +26,7 @@ public class DoProduct extends HttpServlet {
 
      double discountAmount = discountPercent*price*0.01;
      double discountPrice = price - discountAmount;
+
      request.setAttribute("description", description);
      request.setAttribute("price", price);
      request.setAttribute("discountPercent", discountPercent);
